@@ -2,7 +2,8 @@
 import numpy as np
 from coverage import arrays, value, greedy
 
-PARAMS = {'population': 20, 'iterations': 60, 'mutation': .25}
+PARAMS = {'population': 20, 'iterations': 60, 'mutation': .25,
+          'inertia': .7, 'cognitive': 1.4, 'social': 1.4}
 
 
 def run(case, algorithm, seed):
@@ -42,6 +43,26 @@ def run(case, algorithm, seed):
                 children.append(sorted(child))
             pool = children
             scores = [evaluate(s) for s in pool]
+            trace.append(best_value)
+    elif algorithm == 'PSO':
+        keys = rng.random((count, m))
+        keys[0] = 0
+        keys[0, start] = 1
+        velocity = rng.uniform(-.1, .1, (count, m))
+        decode = lambda row: np.argsort(-row, kind='stable')[:k]
+        scores = np.array([evaluate(decode(row)) for row in keys])
+        personal, personal_scores = keys.copy(), scores.copy()
+        global_keys = personal[int(np.argmax(personal_scores))].copy()
+        trace.append(best_value)
+        for _ in range(PARAMS['iterations']):
+            velocity = (.7 * velocity + 1.4 * rng.random(keys.shape) * (personal - keys)
+                        + 1.4 * rng.random(keys.shape) * (global_keys - keys))
+            velocity = np.clip(velocity, -.5, .5)
+            keys = np.clip(keys + velocity, -3, 3)
+            scores = np.array([evaluate(decode(row)) for row in keys])
+            improved = scores > personal_scores
+            personal[improved], personal_scores[improved] = keys[improved], scores[improved]
+            global_keys = personal[int(np.argmax(personal_scores))].copy()
             trace.append(best_value)
     else:
         raise ValueError('Unknown algorithm')
