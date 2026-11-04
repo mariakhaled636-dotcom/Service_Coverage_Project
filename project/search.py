@@ -3,7 +3,8 @@ import numpy as np
 from coverage import arrays, value, greedy
 
 PARAMS = {'population': 20, 'iterations': 60, 'mutation': .25,
-          'inertia': .7, 'cognitive': 1.4, 'social': 1.4}
+          'inertia': .7, 'cognitive': 1.4, 'social': 1.4,
+          'evaporation': .2, 'pheromone_power': 1., 'gain_power': 2.}
 
 
 def run(case, algorithm, seed):
@@ -63,6 +64,26 @@ def run(case, algorithm, seed):
             improved = scores > personal_scores
             personal[improved], personal_scores[improved] = keys[improved], scores[improved]
             global_keys = personal[int(np.argmax(personal_scores))].copy()
+            trace.append(best_value)
+    elif algorithm == 'ACO':
+        pheromone = np.ones(m)
+        for iteration in range(PARAMS['iterations'] + 1):
+            for ant in range(count):
+                if iteration == 0 and ant == 0:
+                    chosen = start.copy()
+                else:
+                    chosen, covered = [], np.zeros(len(weights), dtype=bool)
+                    for _ in range(k):
+                        gains = matrix @ (weights * ~covered)
+                        desirability = pheromone * (gains + 1.) ** 2
+                        desirability[chosen] = 0
+                        j = int(rng.choice(m, p=desirability / desirability.sum()))
+                        chosen.append(j)
+                        covered |= matrix[j]
+                evaluate(chosen)
+            pheromone *= 1 - PARAMS['evaporation']
+            pheromone[best] += best_value / max(1, int(weights.sum()))
+            pheromone = np.clip(pheromone, .01, 10)
             trace.append(best_value)
     else:
         raise ValueError('Unknown algorithm')
