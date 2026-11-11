@@ -16,8 +16,8 @@ Weighted maximum coverage: choose k service locations to cover the most demand w
 |---|---|---|---|
 | لمى الحميد | [Lama219293](https://github.com/Lama219293) | تعريف المشكلة وتجهيز البيانات | [#1](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/1) |
 | إبراهيم العسالي | [ibrahim188964](https://github.com/ibrahim188964) | مراجعة الخوارزمية الجينية | [#2](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/2) |
-| حسن العش | — | مراجعة سرب الجسيمات | [#3](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/3) |
-| بلال احمد قلاوي | — | مراجعة مستعمرة النمل | [#4](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/4) |
+| حسن العش | [hasanalesh09-blip](https://github.com/hasanalesh09-blip) | مراجعة سرب الجسيمات | [#3](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/3) |
+| بلال احمد قلاوي | [aboeamad1994-ui](https://github.com/aboeamad1994-ui) | مراجعة مستعمرة النمل | [#4](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/4) |
 | ماريا خالد السعدي | [mariakhaled636-dotcom](https://github.com/mariakhaled636-dotcom) | فحص القيود والحل المرجعي، والتكامل النهائي والتوثيق | [#6](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/6) و[#10](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/10) |
 | هديل شرف | [hadeel12-ctrl](https://github.com/hadeel12-ctrl) | إعادة التجارب والتحقق | [#5](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/5) |
 | رهف النجار | — | الجداول والرسوم | [#7](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/7) |
