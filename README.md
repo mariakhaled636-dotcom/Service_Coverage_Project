@@ -21,7 +21,7 @@ Weighted maximum coverage: choose k service locations to cover the most demand w
 | ماريا خالد السعدي | [mariakhaled636-dotcom](https://github.com/mariakhaled636-dotcom) | فحص القيود والحل المرجعي، والتكامل النهائي والتوثيق | [#6](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/6) و[#10](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/10) |
 | هديل شرف | [hadeel12-ctrl](https://github.com/hadeel12-ctrl) | إعادة التجارب والتحقق | [#5](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/5) |
 | رهف النجار | — | الجداول والرسوم | [#7](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/7) |
-| آيه أمين العلي | — | كتابة التقرير وتدقيقه | [#8](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/8) |
+| آيه أمين العلي | [Aya85890](https://github.com/Aya85890) | كتابة التقرير وتدقيقه | [#8](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/8) |
 | ليال ميهوب | — | عرض النتائج ودليل التشغيل | [#9](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/9) |
 
 مساهمة كل عضو موثّقة في التقرير (`Report.docx`) وفي تاريخ المستودع. الفريق تسعة أعضاء (ضمن شرط المقرر: 6 إلى 9).
