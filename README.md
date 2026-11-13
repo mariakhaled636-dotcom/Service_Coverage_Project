@@ -22,11 +22,11 @@ Weighted maximum coverage: choose k service locations to cover the most demand w
 | هديل شرف | [hadeel12-ctrl](https://github.com/hadeel12-ctrl) | إعادة التجارب والتحقق | [#5](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/5) |
 | رهف النجار | [RAHAFALANJAR](https://github.com/RAHAFALANJAR) | الجداول والرسوم | [#7](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/7) |
 | آيه أمين العلي | [Aya85890](https://github.com/Aya85890) | كتابة التقرير وتدقيقه | [#8](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/8) |
-| ليال ميهوب | — | عرض النتائج ودليل التشغيل | [#9](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/9) |
+| ليال ميهوب | [l00349800-maker](https://github.com/l00349800-maker) | عرض النتائج ودليل التشغيل | [#9](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/9) |
 
 مساهمة كل عضو موثّقة في التقرير (`Report.docx`) وفي تاريخ المستودع. الفريق تسعة أعضاء (ضمن شرط المقرر: 6 إلى 9).
 
-حساب GitHub [l00349800-maker](https://github.com/l00349800-maker) أضاف اعتمادات Python في `project/requirements.txt` ([#11](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/11)). لم يُطابَق هذا الحساب بعد مع أحد أسماء التقرير.
+حساب GitHub [l00349800-maker](https://github.com/l00349800-maker) يطابق ليال ميهوب (عرض النتائج ودليل التشغيل). أضاف أيضاً اعتمادات Python في `project/requirements.txt` ([#11](https://github.com/mariakhaled636-dotcom/Service_Coverage_Project/issues/11)).
 
 ## التشغيل
 
